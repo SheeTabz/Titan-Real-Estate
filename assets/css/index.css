@@ -1,0 +1,25 @@
+/*  
+purple: #445BE6;
+orange: #F87F29;
+overlay : #513D50;
+*/
+body{
+    font-family: 'Playfair Display';
+    margin: 0;
+    padding: 0; 
+}
+.hero{
+    background-image: url('/assets/images/hero1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 80%;
+    margin:  10px auto auto auto;
+    border-radius: 15px;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(49, 41, 79, 0.7);
+}
