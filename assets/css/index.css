@@ -30,6 +30,7 @@ a{
 nav ul li{
     display: inline-block;
     margin: 10px 20px 10px 20px;
+    color: rgb(49, 41, 79);;
     font-size: 1.2rem;
     font-weight: 800;
 }
@@ -95,4 +96,32 @@ nav ul li{
     background-color: transparent;
     color: #F87F29;
     border: 2px solid  #F87F29;
+}
+
+/* PROPERTIES */
+.property{
+    width: 80%;
+    margin: 20px auto auto auto;
+}
+.filter-prop{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-prop button{
+    background-color: #dddee0;;
+    color: #5d5e61;
+    font-size: 1.0rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.filter-prop button:hover{
+    background-color: rgb(49, 41, 79);;
+    color: #fff;
+}
+.left-prop{
+  margin-right: 20px;
 }
