@@ -39,8 +39,11 @@ nav ul li{
     color: #fff;
     padding: 8px 20px;
     border-radius: 12px;
-
-
+}
+#login:hover{
+    color: #F87F29;
+  background-color: transparent;
+  border: 2px solid rgb(49, 41, 79);
 }
 .container{
     background-image: url('/assets/images/hero1.jpeg');
