@@ -8,6 +8,37 @@ body{
     margin: 0;
     padding: 0; 
 }
+
+nav{
+    /* height: 5vh; */
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+    justify-content: space-between;
+   
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#login{
+    background-color: #445BE6;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 12px;
+
+
+}
 .container{
     background-image: url('/assets/images/hero1.jpeg');
     background-repeat: no-repeat;
@@ -15,11 +46,11 @@ body{
     background-size: cover;
     height: 50vh;
     width: 80%;
-    margin:  10px auto auto auto;
-    border-radius: 15px;
+    margin:  auto;
+    border-radius: 20px;
 }
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    
 }
