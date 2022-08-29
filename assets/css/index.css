@@ -1,14 +1,14 @@
 /*  
 purple: #445BE6;
 orange: #F87F29;
-overlay : #513D50;
+overlay : rgba(49, 41, 79, 0.7);
 */
 body{
     font-family: 'Playfair Display';
     margin: 0;
     padding: 0; 
 }
-.hero{
+.container{
     background-image: url('/assets/images/hero1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
@@ -21,5 +21,5 @@ body{
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: rgba(49, 41, 79, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
