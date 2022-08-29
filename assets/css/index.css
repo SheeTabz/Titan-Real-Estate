@@ -3,21 +3,22 @@ purple: #445BE6;
 orange: #F87F29;
 overlay : rgba(49, 41, 79, 0.7);
 */
+
 body{
     font-family: 'Playfair Display';
     margin: 0;
     padding: 0; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 nav{
-    /* height: 5vh; */
     display: flex;
     width: 80%;
     margin: auto;
-    /* background-color: red; */
     justify-content: space-between;
-   
-
 }
 a{
     color: inherit;
@@ -52,5 +53,6 @@ nav ul li{
 .overlay{
     height: 100%;
     width: 100%;
-    
+    background-color: rgba(0,0 , 0, 0.4);
+    border-radius: 20px;
 }
