@@ -8,10 +8,12 @@ body{
     font-family: 'Playfair Display';
     margin: 0;
     padding: 0; 
-    display: flex;
+    /* width: 80%;
+    margin: auto; */
+    /* display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
+    align-items: center; */
 }
 
 nav{
@@ -33,7 +35,7 @@ nav ul li{
 }
 
 #login{
-    background-color: #445BE6;
+    background-color: rgb(49, 41, 79);;
     color: #fff;
     padding: 8px 20px;
     border-radius: 12px;
@@ -49,10 +51,45 @@ nav ul li{
     width: 80%;
     margin:  auto;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 .overlay{
     height: 100%;
     width: 100%;
     background-color: rgba(0,0 , 0, 0.4);
     border-radius: 20px;
+}
+#about{
+    text-align: center;
+    width: 50%;
+    margin:8% auto auto auto;
+    color: #fff;
+    border-top: 3px solid #F87F29;
+    background-color: rgba(49, 41, 79, 0.5);
+}
+#about h2{
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+#about p{
+    font-size: 1.2rem;
+    padding: 10px 0px 15px;
+}
+#about button{
+    color: #fff;
+    background-color:#F87F29 ;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+#about button:hover{
+    background-color: transparent;
+    color: #F87F29;
+    border: 2px solid  #F87F29;
 }
