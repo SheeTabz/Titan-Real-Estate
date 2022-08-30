@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     })
                 }
+                
+                function eventListener(btn, filter){
+                    btn.addEventListener("click", () => {
+                        appendsOnClick(filter)
+                    })
+                }
 
 
                 function appendToDom(property) {
@@ -39,73 +45,47 @@ document.addEventListener("DOMContentLoaded", () => {
                 function appendHomes(data) {
                     const filtered = data.filter(item => item.property_type == "Home" && item.reviews >= 180 ? item : null)
                     const homeBtn = document.getElementById("homes")
-                    homeBtn.addEventListener("click", () => {
-                        appendsOnClick(filtered)
-                    })
+                    eventListener(homeBtn, filtered)
                 }
                 appendHomes(properties)
 
                 function appendVacationHomes(data) {
                     const filtered = data.filter(item => item.property_type == "Villa" ? item : null)
-                    console.log(filtered);
                     const vacBtn = document.getElementById("vacation")
-                    vacBtn.addEventListener("click", () => {
-                        appendsOnClick(filtered)
-                    })
+                    eventListener(vacBtn, filtered)
                 }
                 appendVacationHomes(properties)
 
                 function appendRentals(data) {
                     const filtered = data.filter(item => item.property_type == "Rental unit" && item.reviews >= 220 ? item : null)
-                    console.log(filtered);
                     const rentBtn = document.getElementById("rental")
-                    rentBtn.addEventListener("click", () => {
-                        appendsOnClick(filtered)
-                    })
+                    eventListener(rentBtn, filtered)
                 }
                 appendRentals(properties)
 
                 function appendBungalows(data) {
                     const filtered = data.filter(item => item.property_type == "Bungalow" && item.reviews >= 20 ? item : null)
-                    console.log(filtered);
-                    const bungalowtBtn = document.getElementById("bungalow")
-                    bungalowtBtn.addEventListener("click", () => {
-                        appendsOnClick(filtered)
-                    })
+                    const bungalowBtn = document.getElementById("bungalow")
+                    eventListener(bungalowBtn, filtered)
                 }
                 appendBungalows(properties)
 
                 function appendApartment(data) {
-                    const filtered = data.filter(item => item.property_type == "Apartment" ? item : null)
-                    console.log(filtered);
+                    const filtered = data.filter(item => item.property_type == "Apartment" ? item : null);
                     const apartBtn = document.getElementById("apartment")
-                    apartBtn.addEventListener("click", () => {
-                        appendsOnClick(filtered)
-                    })
+                    eventListener(apartBtn, filtered)
                 }
                 appendApartment(properties)
+
                 function appendOther(data) {
-                    const filtered = data.filter(item => item.property_type !== "Home" && item.property_type !== "Villa" && item.property_type !== "Rental unit" && item.property_type !== "Bungalow" && item.property_type !== "Apartment" && item.property_type !== "Guesthouse" && item.reviews > 100 ? item : null)
-                    console.log(filtered);
-                    const othertBtn = document.getElementById("other")
-                    othertBtn.addEventListener("click", () => {
-                        appendsOnClick(filtered)
-                    })
+                    const filtered = data.filter(item => item.property_type !== "Home" && item.property_type !== "Villa" && item.property_type !== "Rental unit" && item.property_type !== "Bungalow" && item.property_type !== "Apartment" && item.property_type !== "Guesthouse" && item.reviews > 150 ? item : null)
+                    const otherBtn = document.getElementById("other")
+                    eventListener(otherBtn, filtered)
                 }
                 appendOther(properties)
-
-
-
-
-
-
             })
     }
     fetchData()
-
-
-
-
 })
 
 
