@@ -8,13 +8,6 @@ body{
     font-family: 'Playfair Display';
     margin: 0;
     padding: 0; 
-    /* background-color:#DDDFE0 ; */
-    /* width: 80%;
-    margin: auto; */
-    /* display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center; */
 }
 
 nav{
@@ -103,17 +96,16 @@ nav ul li{
 
 
 .more{
-    /* background-color: red; */
     width: 80%;
     margin: auto;
     height: 40vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 40px; */
+   
 }
 .info{
-    /* background-color: rgb(77, 204, 38); */
+
     width: 450px;
 }
 .info p{
@@ -141,7 +133,7 @@ nav ul li{
     margin: auto;
     justify-content: space-between;
 }
-.filter-prop button{
+#moreInf, #submit ,.filter-prop button{
     /* background-color: #dddee0;;
     color: #5d5e61; */
     background-color: rgb(49, 41, 79);;
@@ -155,9 +147,7 @@ nav ul li{
     cursor: pointer;
     /* transition: 0.3s ease; */
 }
-.filter-prop button:hover{
-    /* background-color: rgb(49, 41, 79);;
-    color: #FFFFFF; */
+.moreInf button:hover, .filter-prop button:hover{
     background-color: transparent;
     color: #F87F29;
     border-color:rgb(49, 41, 79);
@@ -189,7 +179,7 @@ nav ul li{
     text-align: center;
  height: 350px;
  border-radius: 10px;
- /* border: 2px solid #bcbcbd; */
+
 }
 .card p{
     color: #5d5e61;
@@ -197,4 +187,92 @@ nav ul li{
 }
 .checked{
     color: #F87F29;
+}
+
+/* EXPERIENCE SECTION */
+#experience{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+#experience h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(49, 41, 79);
+}
+.aboutSec{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image{
+    flex-basis: 60%;
+    border-radius: 10px;
+}
+#moreInf:hover, #submit:hover{
+    background-color: transparent;
+    color: #F87F29;
+    border-color:rgb(49, 41, 79);
+}
+.image img{
+   
+}
+.flex-items{
+   width: 600px;
+   display: flex;
+   justify-content: space-between;
+   height: 15vh;
+}
+.flex h4{
+    color: #F87F29;
+}
+.flex p{
+    font-weight: 800;
+}
+.flex-1{
+    align-self: flex-start;
+
+}
+.flex-2{
+    align-self: center;
+}
+.flex-3{
+    align-self: flex-end;
+}
+.aboutSec button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* COMMENTS SECTION */
+.comment{
+    background-color: rgba(49, 41, 79, 0.2);
+    width: 80%;
+    margin: 60px auto auto auto;
+    border-radius: 20px;
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.comment h2{
+    text-align: center;
+    padding: 20px;
+    color: rgb(49, 41, 79);
+}
+.comment-area{
+   display: flex;
+   justify-content: center;
+  
+}
+#submit{
+    align-self: center;
 }
