@@ -40,12 +40,13 @@ nav ul li{
     background-color: rgb(49, 41, 79);;
     color: #fff;
     padding: 8px 20px;
+    border: 2px solid transparent;
     border-radius: 12px;
 }
 #login:hover{
     color: #F87F29;
   background-color: transparent;
-  border: 2px solid rgb(49, 41, 79);
+  border-color: rgb(49, 41, 79);
 }
 .container{
     background-image: url('/assets/images/hero1.jpeg');
@@ -90,38 +91,76 @@ nav ul li{
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
+    border: 2px solid transparent;
     cursor: pointer;
     transition: 0.2s ease;
 }
 #about button:hover{
     background-color: transparent;
     color: #F87F29;
-    border: 2px solid  #F87F29;
+    border-color:#F87F29;
+}
+
+
+.more{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+.info{
+    /* background-color: rgb(77, 204, 38); */
+    width: 450px;
+}
+.info p{
+    color: #5d5e61;
+    font-weight: 500;
+}
+.info h2{
+    font-size: 1.6rem;
+}
+.fa-home{
+    color:rgb(49, 41, 79);
 }
 
 /* PROPERTIES */
 .property{
-    width: 80%;
+    background-color:rgba(49, 41, 79, 0.1) ;
+    width: 100%;
     margin: 20px auto auto auto;
+   
 }
 .filter-prop{
+    padding-top: 30px;
     display: flex;
+    width: 80%;
+    margin: auto;
     justify-content: space-between;
 }
 .filter-prop button{
-    background-color: #dddee0;;
-    color: #5d5e61;
+    /* background-color: #dddee0;;
+    color: #5d5e61; */
+    background-color: rgb(49, 41, 79);;
+    color: #FFFFFF;
     font-size: 1.0rem;
     font-weight: 700;
     padding: 10px 20px;
     border: none;
+    border: 2px solid transparent;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
 }
 .filter-prop button:hover{
-    background-color: rgb(49, 41, 79);;
-    color: #fff;
+    /* background-color: rgb(49, 41, 79);;
+    color: #FFFFFF; */
+    background-color: transparent;
+    color: #F87F29;
+    border-color:rgb(49, 41, 79);
 }
 .left-prop{
   margin-right: 20px;
@@ -129,7 +168,9 @@ nav ul li{
 
 /* CARDS */
 .propCards{
-    margin-top: 20px ;
+    padding: 30px 0px 30px;
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-template-columns: 330px 330px 330px 330px;
     justify-content: space-between; 
@@ -144,11 +185,15 @@ nav ul li{
    
 }
 .card{
-    /* background-color: rgb(212, 212, 212); */
+    background-color: #fff;
     text-align: center;
  height: 350px;
  border-radius: 10px;
- border: 2px solid #bcbcbd;
+ /* border: 2px solid #bcbcbd; */
+}
+.card p{
+    color: #5d5e61;
+    font-weight: 500;
 }
 .checked{
     color: #F87F29;
