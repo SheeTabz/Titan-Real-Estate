@@ -34,6 +34,11 @@ nav ul li{
     font-weight: 800;
     transition:0.4s ease;
 }
+.fa-bars{
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+}
 nav ul li:nth-child(2):hover, li:nth-child(1):hover{
     color:#F87F29;
 }
@@ -463,6 +468,7 @@ font-weight: 700;
       .filter-prop, .more,.comment-area{
         /* width: 80%; */
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -489,4 +495,39 @@ font-weight: 700;
         border-radius:  20px;
      
     }
+}
+@media screen and (max-width: 700px){
+nav ul li{
+    display: none;
+    z-index: -1;
+}
+.fa-bars{
+    
+    display: block;
+}
+.propCards{
+    grid-template-columns: 330px ;
+    width: 80%;
+  }
+  .filter-prop button{
+    padding: 5px 10px;
+  }
+  .info h2{
+    font-size: 1.2rem;
+}
+#about h2,#experience h1,#property-exploration h1{
+  font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 660px){
+ textarea{
+    width: 60%;
+    margin: auto;
+ }
+}
+@media screen and (max-width: 610px){
+.flex-items{
+    width: 80%;
+    margin: auto;
+}
 }
