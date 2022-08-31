@@ -18,6 +18,9 @@ nav{
     margin: auto;
     justify-content: space-between;
 }
+nav img{
+    cursor: pointer;
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -29,8 +32,11 @@ nav ul li{
     color: rgb(49, 41, 79);;
     font-size: 1.2rem;
     font-weight: 800;
+    transition:0.4s ease;
 }
-
+nav ul li:nth-child(2):hover, li:nth-child(1):hover{
+    color:#F87F29;
+}
 #login{
     background-color: rgb(49, 41, 79);;
     color: #fff;
@@ -117,7 +123,7 @@ nav ul li{
 .info h2{
     font-size: 1.6rem;
 }
-.fa-home{
+.fa-home, .fa-hotel, .fa-briefcase{
     color:rgb(49, 41, 79);
 }
 
