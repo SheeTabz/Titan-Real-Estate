@@ -165,6 +165,7 @@ const loginBtn = document.getElementById("login")
 const loginPage = document.querySelector(".login-page")
 const overlay = document.querySelector(".form-overlay")
 const closeBtn = document.querySelector("#close-btn")
+const form2 = document.getElementById("login-page")
 console.log(login)
 
 function openLogin(){
@@ -181,6 +182,13 @@ loginBtn.addEventListener("click",()=>{
 })
 closeBtn.addEventListener("click",()=>{
     closeLogin()
+ })
+
+ form2.addEventListener("submit",(e)=>{
+   e.preventDefault()
+   closeLogin()
+   form2.reset()
+
  })
 
 
