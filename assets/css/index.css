@@ -79,7 +79,7 @@ nav ul li{
     font-size: 1.2rem;
     padding: 10px 0px 15px;
 }
-#about button{
+#about button , .back button{
     color: #fff;
     background-color:#F87F29 ;
     font-size: 1.2rem;
@@ -169,24 +169,57 @@ nav ul li{
     row-gap: 30px;
     align-content: space-between;
 }
-.card img{
+.card{
+     height: 350px;
+    }
+    .innerCard{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    .front{
+        background-color: #fff;
+        /* height: 350px; */
+        text-align: center;
+        border-radius: 10px;
+      
+    }
+.front img{
     width: 300px;
     height: 180px;
     margin-top: 15px;
     border-radius: 10px  10px 0px 0px;
-   
 }
-.card{
-    background-color: #fff;
-    text-align: center;
- height: 350px;
- border-radius: 10px;
-
-}
-.card p{
+.front p{
     color: #5d5e61;
     font-weight: 500;
 }
+ .back {
+    display: flex;
+    /* height: 350px; */
+    flex-direction: column;
+    background-color: #F87F29;
+    text-align: center;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  
+ }
+
+.front, .back{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+ 
+}
+.card:hover .innerCard{
+   transform: rotateY(180deg);
+    
+}
+
 .checked{
     color: #F87F29;
 }
@@ -277,4 +310,18 @@ form{
 }
 #submit{
     align-self: center;
+}
+#response{
+    padding: 10px;
+    width: 400px;
+    display: none;
+    margin-left: 10px;
+    height: fit-content;
+    background-color: rgb(49, 41, 79);
+    border-radius: 6px;
+}
+#response li{
+    font-weight: 700;
+    color: #fff;
+    list-style: none;
 }
