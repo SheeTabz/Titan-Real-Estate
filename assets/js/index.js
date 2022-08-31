@@ -160,6 +160,30 @@ form.addEventListener("submit", (e) => {
     form.reset()
 })
 
+// FUNCTIONS TO DEAL WITH THE FORM
+const loginBtn = document.getElementById("login")
+const loginPage = document.querySelector(".login-page")
+const overlay = document.querySelector(".form-overlay")
+const closeBtn = document.querySelector("#close-btn")
+console.log(login)
+
+function openLogin(){
+    loginPage.style.display ="block"
+    overlay.style.display ="block"
+}
+function closeLogin(){
+    loginPage.style.display ="none"
+    overlay.style.display ="none"
+}
+
+loginBtn.addEventListener("click",()=>{
+   openLogin()
+})
+closeBtn.addEventListener("click",()=>{
+    closeLogin()
+ })
+
+
 
 
 
