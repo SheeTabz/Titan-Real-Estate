@@ -79,7 +79,7 @@ nav ul li{
     font-size: 1.2rem;
     padding: 10px 0px 15px;
 }
-#about button , .back button{
+#about button{
     color: #fff;
     background-color:#F87F29 ;
     font-size: 1.2rem;
@@ -135,7 +135,7 @@ nav ul li{
     margin: auto;
     justify-content: space-between;
 }
-#moreInf, #submit ,.filter-prop button{
+#moreInf, #submit ,.filter-prop button, .back button{
     /* background-color: #dddee0;;
     color: #5d5e61; */
     background-color: rgb(49, 41, 79);;
@@ -169,57 +169,61 @@ nav ul li{
     row-gap: 30px;
     align-content: space-between;
 }
-.card{
-     height: 350px;
-    }
-    .innerCard{
-        position: relative;
-        height: 100%;
-        width: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-    .front{
-        background-color: #fff;
-        /* height: 350px; */
-        text-align: center;
-        border-radius: 10px;
-      
-    }
+
+ .card{
+    height: 350px;
+   }
+   .innerCard{
+       position: relative;
+       height: 100%;
+       width: 100%;
+       transition: transform 0.6s;
+       transform-style: preserve-3d;
+   }
+   .front{
+       background-color: #fff;
+       
+       text-align: center;
+       border-radius: 10px;
+     
+   }
 .front img{
-    width: 300px;
-    height: 180px;
-    margin-top: 15px;
-    border-radius: 10px  10px 0px 0px;
+   width: 300px;
+   height: 180px;
+   margin-top: 15px;
+   border-radius: 10px  10px 0px 0px;
 }
 .front p{
-    color: #5d5e61;
-    font-weight: 500;
+   color: #5d5e61;
+   font-weight: 500;
 }
- .back {
-    display: flex;
-    /* height: 350px; */
-    flex-direction: column;
-    background-color: #F87F29;
-    text-align: center;
-    border-radius: 10px;
-    transform: rotateY(180deg);
-  
- }
-
-.front, .back{
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     -webkit-backface-visibility: hidden;
-     backface-visibility: hidden;
+.back {
+   display: flex;
+   /* height: 350px; */
+   flex-direction: column;
+   background-color: #F87F29;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+color: #fff;
+font-weight: 700;
+   transform: rotateY(180deg);
  
 }
-.card:hover .innerCard{
-   transform: rotateY(180deg);
-    
-}
 
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+.card:hover .innerCard{
+  transform: rotateY(180deg);
+   
+} 
 .checked{
     color: #F87F29;
 }
@@ -252,9 +256,7 @@ nav ul li{
     color: #F87F29;
     border-color:rgb(49, 41, 79);
 }
-.image img{
-   
-}
+
 .flex-items{
    width: 600px;
    display: flex;
