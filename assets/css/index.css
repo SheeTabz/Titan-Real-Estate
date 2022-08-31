@@ -400,7 +400,93 @@ font-weight: 700;
     backdrop-filter: blur(5px);
     display: none;
     z-index: 5;
-
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1720px){
+    .propCards, .more, .container, nav,.filter-prop{
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width: 1590px){
+    .propCards, .more, .container, nav,.filter-prop{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 1495px){
+    .propCards, .more, .container, nav,.filter-prop,#experience{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 1380px){
+    .propCards{
+        grid-template-columns: 330px 330px 330px ;
+      }
+      .propCards, .filter-prop,.container, nav,.more,#experience, .comment{
+        width: 85%;
+      }   
+}
+@media screen and (max-width: 1280px){
+    #experience{
+        width: 100%;
+      }   
+}
+@media screen and (max-width: 1190px){
+    .propCards, .filter-prop,.container, nav,.more, .comment{
+        width: 100%;
+      }  
+      .aboutSec{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center;
+        text-align: center; */
+    }
+    .aboutCont{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        text-align: center;
+    } 
+}
 
+@media screen and (max-width: 1020px){
+    .propCards{
+        grid-template-columns: 330px 330px;
+        width: 80%;
+      }
+      .filter-prop, .more,.comment-area{
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .more{ 
+        height: fit-content; 
+    }
+}
+@media screen and (max-width: 835px){
+    .propCards{
+        display: grid;
+      justify-content: space-around;
+        width: 100%;
+      }
+      .container{
+
+        height: 30vh;
+    }
+      #about{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius:  20px;
+     
+    }
+}
