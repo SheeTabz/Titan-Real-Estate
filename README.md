@@ -5,8 +5,8 @@
 The Vallie's Estate website is a platform that provides clients from all corners of the world to locate house properties that meet their desires and at affordable prices.
 
 ## Demo
-Use the link provided to navigate to the Vallie's estate website.
-[Vallie's Estate](https://sheetabz.github.io/Vallies-Estate/)<br>
+Use the link provided to navigate to the Titan Real Estate website.
+[Titan Real Estate](https://titan-real-estate.netlify.app/)<br>
 
 The page appears as shown below and has the following feaures:
 - This the landingpage
