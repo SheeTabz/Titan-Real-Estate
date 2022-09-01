@@ -549,12 +549,12 @@ nav ul li{
     }
 }
 @media screen and (max-width: 395px){
-    .btn-explore{
-        padding: 0px;
-        font-size: 0.8rem;
+    nav img{
+        width: 130px;
     }
     .container{
         height: 80vh;
+        margin: 10px 0px;
     }
     #about{
         display: flex;
