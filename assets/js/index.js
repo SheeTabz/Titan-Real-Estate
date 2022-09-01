@@ -193,7 +193,7 @@ closeBtn.addEventListener("click",()=>{
 
  })
  document.addEventListener("keydown",(e)=>{
-    if(e.key === "escape"){
+    if(e.key === "Escape" ){
         closeLogin()
     }
  })
