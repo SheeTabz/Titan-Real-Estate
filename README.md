@@ -2,7 +2,7 @@
 ***
 
 ## Describtion
-The Vallie's Estate website is a platform that provides clients from all corners of the world to locate house properties that meet their desires and at affordable prices.
+Titan Real Estate website is a platform that provides clients with the freedom to locate house properties of different kinds that meet their desires and at affordable prices. 
 
 ## Demo
 Use the link provided to navigate to the Titan Real Estate website.
@@ -10,9 +10,9 @@ Use the link provided to navigate to the Titan Real Estate website.
 
 The page appears as shown below and has the following feaures:
 - This the landingpage
-<img src="./assets/images/FirstPage.png">
+<img src="./assets/images/homepage.png">
 - Other pages<br>
-<img src="./assets/images/Products.png">
+<img src="./assets/images/propert.png">
 
 ## Technologies used & Features
 - Well designed and responsive UI
