@@ -548,7 +548,7 @@ nav ul li{
         width: 300px;
     }
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 395px){
     .btn-explore{
         padding: 0px;
         font-size: 0.8rem;
