@@ -186,9 +186,16 @@ closeBtn.addEventListener("click",()=>{
 
  form2.addEventListener("submit",(e)=>{
    e.preventDefault()
+//    alert("You have successfully logged in!")
    closeLogin()
+ 
    form2.reset()
 
+ })
+ document.addEventListener("keydown",(e)=>{
+    if(e.key === "escape"){
+        closeLogin()
+    }
  })
 
 
