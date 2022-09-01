@@ -500,6 +500,7 @@ font-weight: 700;
     }
 }
 @media screen and (max-width: 700px){
+
 .active{
     display: none;
 }
@@ -516,6 +517,9 @@ nav ul{
     align-items: center;
     background-color: #F87F29;
    z-index: 2;
+}
+nav ul li:nth-child(2):hover, li:nth-child(1):hover{
+    color:#fff;
 }
 .fa-bars{
     
