@@ -538,10 +538,16 @@ nav ul li{
     h1 #exper {
         font-size: 1rem
     }
-    .filter-prop button{
-        padding: 3px 5px;
-        font-size: 1.2rem;
-        font-weight: 600px;
+     .left-prop, .right-prop {
+       display: flex;
+       justify-content: space-around;
+       
+       flex-wrap: wrap;
+      }
+      .filter-prop button{
+        margin: 5px 5px;
+        font-size: 0.9rem;
+        padding: 3px 8px;
       }
       .info{
        text-align:center;
@@ -553,6 +559,9 @@ nav ul li{
         width: 130px;
         padding: 0px 0px 0px 10px;
     }
+    h1 #exper {
+        font-size: 0.8rem
+    }
     .container{
         height: 80vh;
         margin: 10px 0px;
@@ -562,5 +571,12 @@ nav ul li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+}
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    #about{
+        margin: 0 auto auto auto;
+        height: 100%;
     }
 }
