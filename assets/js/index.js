@@ -197,7 +197,16 @@ closeBtn.addEventListener("click",()=>{
         closeLogin()
     }
  })
+// 
+const navBar = document.querySelector(".fa-bars")
+console.log(navBar)
+const navLi = document.querySelector("ul")
+console.log(navLi)
+navBar.addEventListener("click",()=> {
+   
 
+    navLi.classList.toggle("active")
+})
 
 
 
