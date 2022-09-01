@@ -538,6 +538,9 @@ nav ul li{
     h1 #exper {
         font-size: 1rem
     }
+    .flex-items{
+        width: 100%;
+    }
      .left-prop, .right-prop {
        display: flex;
        justify-content: space-around;
