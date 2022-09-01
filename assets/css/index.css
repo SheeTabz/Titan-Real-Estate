@@ -454,9 +454,6 @@ font-weight: 700;
         margin: auto;
         display: flex;
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center;
-        text-align: center; */
     }
     .aboutCont{
         display: flex;
@@ -473,7 +470,6 @@ font-weight: 700;
         width: 80%;
       }
       .filter-prop, .more,.comment-area{
-        /* width: 80%; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -550,5 +546,20 @@ nav ul li{
       .info{
        text-align:center;
         width: 300px;
+    }
+}
+@media screen and (max-width: 380px){
+    .btn-explore{
+        padding: 0px;
+        font-size: 0.8rem;
+    }
+    .container{
+        height: 80vh;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
