@@ -551,6 +551,7 @@ nav ul li{
 @media screen and (max-width: 395px){
     nav img{
         width: 130px;
+        padding: 0px 0px 0px 10px;
     }
     .container{
         height: 80vh;
