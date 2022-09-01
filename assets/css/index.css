@@ -139,6 +139,14 @@ nav ul li:nth-child(2):hover, li:nth-child(1):hover{
     margin: 20px auto auto auto;
    
 }
+
+#exper{
+    text-align: center;
+    color: rgb(49, 41, 79);
+    font-weight: 800;
+    padding-top: 30px;
+    font-size: 2rem;
+}
 .filter-prop{
     padding-top: 30px;
     display: flex;
@@ -515,7 +523,7 @@ nav ul li{
   .info h2{
     font-size: 1.2rem;
 }
-#about h2,#experience h1,#property-exploration h1{
+#about h2,#experience h1,#property-exploration h1,#exper{
   font-size: 1.5rem;
 }
 }
@@ -530,4 +538,18 @@ nav ul li{
     width: 80%;
     margin: auto;
 }
+}
+@media screen and (max-width: 490px){
+    h1 #exper {
+        font-size: 1rem
+    }
+    .filter-prop button{
+        padding: 3px 5px;
+        font-size: 1.2rem;
+        font-weight: 600px;
+      }
+      .info{
+       text-align:center;
+        width: 300px;
+    }
 }
