@@ -16,9 +16,9 @@ The page appears as shown below and has the following feaures:
 
 ## Technologies used & Features
 - Well designed and responsive UI
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3
+- Vanilla JavaScript
 - API
 
 ## Future-implementations 
